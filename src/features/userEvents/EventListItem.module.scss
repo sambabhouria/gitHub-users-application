@@ -1,0 +1,33 @@
+@import 'theme/variables';
+
+.item {
+    padding: 1rem;
+    position: relative;
+    border-left: 2px solid $color-bg;
+}
+
+.date {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.body {
+    display: flex;
+}
+
+.item::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    top: 1.2rem;
+    position: absolute;
+    left: -0.6rem;
+    border-radius: 10px;
+    border: 2px solid #f5f5f5;
+    background: $color-white;
+}
+
+.item:last-child {
+    border-image: linear-gradient(to bottom, $color-bg 60%, rgba($color-bg, 0)) 1 100%;
+}

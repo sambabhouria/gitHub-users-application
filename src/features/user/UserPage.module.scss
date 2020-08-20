@@ -1,0 +1,47 @@
+@import 'theme/variables';
+@import 'theme/mixins';
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: true;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    @include respond(sm) {
+        flex-direction: column;
+    }
+}
+
+.section {
+    width: 50%;
+    padding: 2rem;
+    background-color: $color-white;
+    border-radius: 4px;
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
+
+        &.mtop {
+            margin-top: 4rem;
+        }
+    }
+
+    @include respond(sm) {
+        width: 100%;
+    }
+
+    &:first-child {
+        margin-right: 1rem;
+        @include respond(sm) {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }
+    &:last-child {
+        margin-left: 1rem;
+        @include respond(sm) {
+            margin-left: 0;
+        }
+    }
+}
