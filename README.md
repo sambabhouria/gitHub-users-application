@@ -1,5 +1,7 @@
 # GitHub Users App
 
+https://pylnata.github.io/users-app/
+
 This small project is built in order to practice using Redux-Toolkit with respect to the best practices and latest recommendations from redux style guide.
 
 * React
