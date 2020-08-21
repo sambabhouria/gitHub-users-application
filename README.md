@@ -1,3 +1,17 @@
+# GitHub Users App
+
+This small project is build as test challenge in order to practice using Redux-Toolkit as latest recommendation of redux guide.
+
+* React
+* Redux
+* Redux-observable
+* RTK (redux-toolkit)
+* Typescript
+* REST API Github Users
+
+Has some tests, written with react-testing-library.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

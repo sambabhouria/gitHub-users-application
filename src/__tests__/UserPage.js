@@ -14,7 +14,7 @@ beforeEach(() => {
 });
 
 describe("UserPage", () => {
-  it("UserListPage shows renders profile, repos, events", async () => {
+  it("UserPage renders profile, repos, events", async () => {
     mockAxios.get.mockImplementation((url) => {
       switch (url) {
         case "/mojombo":
