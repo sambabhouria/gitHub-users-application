@@ -1,6 +1,6 @@
 # GitHub Users App
 
-This small project is build as test challenge in order to practice using Redux-Toolkit (latest recommendation of redux guide).
+This small project is built as test challenge in order to practice using Redux-Toolkit (latest recommendation of redux guide).
 
 * React
 * Redux
