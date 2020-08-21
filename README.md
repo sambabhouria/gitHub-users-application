@@ -1,6 +1,6 @@
 # GitHub Users App
 
-This small project is build as test challenge in order to practice using Redux-Toolkit (latest recommendation of redux guide).
+This small project is built in order to practice using Redux-Toolkit with respect to the best practices and latest recommendations from redux style guide.
 
 * React
 * Redux
@@ -9,7 +9,7 @@ This small project is build as test challenge in order to practice using Redux-T
 * Typescript
 * REST API Github Users
 
-Has some tests, written with react-testing-library.
+Has some tests, written with react-testing-library. Styled with sass modules.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
