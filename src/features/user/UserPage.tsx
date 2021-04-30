@@ -11,8 +11,11 @@ import { RepoList } from 'features/userRepos/RepoList'
 import styles from './UserPage.module.scss'
 import { getUserDetailsStart } from './userDetailsSlice'
 
+type RouteParams = {
+    login: string
+}
 export const UserPage: React.FC = () => {
-    const { login } = useParams()
+    const { login }: RouteParams = useParams()
 
     console.log('login', login)
     const dispatch = useDispatch()
