@@ -16,6 +16,7 @@ const ErrorPage = React.lazy(async () => {
 
 const App: React.FC = () => {
     const location = useLocation()
+    console.log('🚀 ~ file: App.tsx ~ line 19 ~ location', location)
 
     const withBackLink = location.pathname.split('/')[1] === 'user'
 

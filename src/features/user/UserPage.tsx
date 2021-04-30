@@ -14,6 +14,7 @@ import { getUserDetailsStart } from './userDetailsSlice'
 export const UserPage: React.FC = () => {
     const { login } = useParams()
 
+    console.log('login', login)
     const dispatch = useDispatch()
 
     const { detailsByUser, error: userError, loading } = useSelector((state: RootState) => state.userDetails)
