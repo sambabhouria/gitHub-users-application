@@ -1,7 +1,6 @@
 {
     "name": "ghithub-users-app",
     "version": "0.1.0",
-    "homepage": "/users-app/",
     "private": true,
     "engines": {
         "node": "12.18.3",
