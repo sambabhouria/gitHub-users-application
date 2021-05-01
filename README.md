@@ -16,3 +16,5 @@ This small project is built in order to practice using Redux-Toolkit with respec
 In the project directory, you can run:
 
 ### `yarn start`
+<img src="src/assets/images/1.png" width="300" height="300"/><img src="src/assets/images/2.png" width="300" height="300"/>
+                        <img src="src/assets/images/3.png" width="300" height="300"/>
