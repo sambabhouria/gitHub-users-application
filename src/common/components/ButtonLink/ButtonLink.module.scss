@@ -1,0 +1,9 @@
+@import 'theme/variables';
+
+.btn {
+    color: $color-link;
+    background: $color-white;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+}
