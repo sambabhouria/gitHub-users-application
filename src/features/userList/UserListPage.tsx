@@ -12,6 +12,10 @@ import { getUsersStart } from './usersSlice'
 export const UserListPage: React.FC = () => {
     const { visibleUsers, loading, error: usersError, isLastPage } = useSelector((state: RootState) => state.users)
 
+    console.log(
+        'user state',
+        useSelector((state: RootState) => state.users)
+    )
     const bottomBoundaryRef = useRef(null)
 
     useDocumentTitle()
