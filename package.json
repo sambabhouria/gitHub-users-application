@@ -1,7 +1,7 @@
 {
     "name": "ghithub-users-app",
     "version": "0.1.0",
-    "homepage": "http://sambabhouria.github.io/users-app",
+    "homepage": "/users-app/",
     "private": true,
     "dependencies": {
         "@reduxjs/toolkit": "^1.2.5",
