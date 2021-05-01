@@ -1,0 +1,16 @@
+@import 'theme/mixins';
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+    @include respond(lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(sm) {
+        grid-template-columns: 1fr;
+    }
+}
