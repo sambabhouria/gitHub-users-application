@@ -110,6 +110,60 @@ const UserItem = (userResponse: UserResponse): User => ({
 
     epicMiddleware.run(rootEpic);
 
+    Integrate the code above with your existing Store configuration so that it looks like this:
+
+    redux/configureStore.js
+    import { createStore, applyMiddleware } from 'redux';
+    import { createEpicMiddleware } from 'redux-observable';
+    import { rootEpic, rootReducer } from './modules/root';
+
+    const epicMiddleware = createEpicMiddleware();
+
+    export default function configureStore() {
+    const store = createStore(
+        rootReducer,
+        applyMiddleware(epicMiddleware)
+    );
+
+    epicMiddleware.run(rootEpic);
+
+    return store;
+    }
+
+    Redux DevTools
+    To enable Redux DevTools Extension, just use window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ or import redux-devtools-extension npm package.
+
+
+    import { compose } from 'redux'; // and your other imports from before
+    const epicMiddleware = createEpicMiddleware();
+
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+    const store = createStore(pingReducer,
+    composeEnhancers(
+        applyMiddleware(epicMiddleware)
+    )
+    );
+
+    epicMiddleware.run(pingEpic);
+
+    https://redux-observable.js.org/docs/recipes/Cancellation.html
+    Cancelling some async side effects is a common requirement of Epics.
+    While there are several ways of doing this depending on your requirements,
+    the most common way is to have your application dispatch a cancellation action and listen for it inside your Epic.
+    This can be done with the takeUntil() RxJS operator:
+
+    import { ajax } from 'rxjs/ajax';
+
+    const fetchUserEpic = action$ => action$.pipe(
+    ofType(FETCH_USER),
+    mergeMap(action => ajax.getJSON(`/api/users/${action.payload}`).pipe(
+        map(response => fetchUserFulfilled(response)),
+        takeUntil(action$.pipe(
+        ofType(FETCH_USER_CANCELLED)
+        ))
+    ))
+    );
  */
 
 export const getUsersEpic = (action$: ActionsObservable<UsersAction>, state$: StateObservable<any>) => {
