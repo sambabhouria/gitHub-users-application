@@ -1,7 +1,7 @@
 {
-    "name": "users-app",
+    "name": "ghithub-users-app",
     "version": "0.1.0",
-    "homepage": "http://pylnata.github.io/users-app",
+    "homepage": "http://sambabhouria.github.io/users-app",
     "private": true,
     "dependencies": {
         "@reduxjs/toolkit": "^1.2.5",
