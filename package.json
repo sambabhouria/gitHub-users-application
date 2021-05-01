@@ -26,7 +26,7 @@
         "express-favicon": "^2.0.1",
         "gh-pages": "^3.1.0",
         "moment": "^2.27.0",
-        "node-sass": "^4.14.1",
+        "node-sass": "^5.0.0",
         "parse-link-header": "^1.0.1",
         "path": "^0.12.7",
         "react": "^16.13.1",
@@ -39,7 +39,8 @@
         "typescript": "~3.8.2"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "node server.js",
+        "dev": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
