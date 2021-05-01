@@ -8,7 +8,9 @@ import { User, UserResponse, UsersResponse } from 'app/types'
 import { UsersAction, getUsersFailure, getUsersStart, getUsersSuccess } from './usersSlice'
 
 /**
- * 
+ *https://sung.codes/blog/2019/10/18/preventing-multiple-observables-from-firing-from-redux-observable/
+
+ $https://codesandbox.io/s/basic-example-kgq57?from-embed=&file=/src/redux/modules/ping.ts
  * example of ping pon 
  * 
  * import React from 'react'
