@@ -1,0 +1,15 @@
+@import 'theme/variables';
+
+.item {
+    background-color: $color-white;
+    border-radius: 4px;
+    &:hover {
+        box-shadow: 0 6px 15px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.footer {
+    border-top: 1px solid $color-bg;
+    padding: 1.2rem 0;
+    text-align: center;
+}
