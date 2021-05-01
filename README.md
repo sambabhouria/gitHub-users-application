@@ -11,6 +11,7 @@ This small project is built in order to practice using Redux-Toolkit with respec
 
 ## Available Scripts
 
+## Demo on heroku: https://github-user-application.herokuapp.com/
 In the project directory, you can run:
 
 ### `yarn start`
