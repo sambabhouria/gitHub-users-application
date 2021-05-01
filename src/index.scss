@@ -1,0 +1,41 @@
+@import 'theme/variables';
+@import 'theme/mixins';
+
+// reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(sm) {
+        font-size: 50%; //1 rem = 8px, 9/16 = 50%
+    }
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: $color-text-primary;
+    font-size: $default-font-size;
+    background-color: $color-bg;
+    box-sizing: border-box;
+}
+
+a {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-link;
+    }
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+}
